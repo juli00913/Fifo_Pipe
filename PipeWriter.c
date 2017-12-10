@@ -12,7 +12,7 @@ int main() {
 	int fd = open("fifoPipe", O_WRONLY);
 	char* s = "Greetings from PipeWriter";
 	while(1) {
-		write(fd, s, strlen(s));
+	    write(fd, s, strlen(s));
 		sleep(1);
 	}
 	return 0;
