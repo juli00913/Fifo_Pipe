@@ -7,7 +7,6 @@
 #include <sys/stat.h>
 
 int main() {
-	
     mkfifo("fifoPipe", 0666); 
     int fd = open("fifoPipe", O_WRONLY);
     char* s = "Greetings from PipeWriter";
