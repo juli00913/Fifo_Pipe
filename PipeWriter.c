@@ -12,7 +12,6 @@ int main() {
     char* s = "Greetings from PipeWriter";
     while(1) {
         write(fd, s, strlen(s));
-        sleep(1);
     }
     return 0;
 }
